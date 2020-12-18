@@ -1,10 +1,12 @@
 import React from 'react';
+
 import Navbar from '../components/Navbar';
 
 const Home = () => {
   return (
     <div>
       <Navbar />
+
       <div className="card bg-dark text-white m-5">
         <div className="card-header"> Home page</div>
         <div className="card-body">
