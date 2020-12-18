@@ -7,7 +7,7 @@ const Input = ({ label, id, type, value, setValue, ...props }) => {
 
   return (
     <>
-      <label htmlFor={id} className="form-label">
+      <label htmlFor={id} className="form-label mt-3 text-muted">
         {label}
       </label>
       <input

@@ -1,11 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import UserTable from '../components/UserTable';
 
 const ListUsers = () => {
   return (
     <div>
       <Navbar />
-      <h1>List Users</h1>
+      <div className="container">
+        <UserTable />
+      </div>
     </div>
   );
 };
