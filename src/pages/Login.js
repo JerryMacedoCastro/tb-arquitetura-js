@@ -6,6 +6,11 @@ const Login = () => {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert('Feature not implemented yet');
+  };
+
   return (
     <>
       <Navbar />
@@ -33,7 +38,11 @@ const Login = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">
+        <button
+          type="submit"
+          className="btn btn-primary"
+          onClick={handleSubmit}
+        >
           Login
         </button>
       </form>
