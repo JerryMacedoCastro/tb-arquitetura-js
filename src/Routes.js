@@ -1,10 +1,10 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import BooksList from './pages/BooksList';
-import Home from './pages/Home';
-import ListUsers from './pages/ListUsers';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import Books from "./pages/Books";
+import Home from "./pages/Home";
+import ListUsers from "./pages/ListUsers";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 const Routes = () => {
   return (
@@ -23,7 +23,7 @@ const Routes = () => {
           <Signup />
         </Route>
         <Route path="/books">
-          <BooksList />
+          <Books />
         </Route>
       </Switch>
     </div>
