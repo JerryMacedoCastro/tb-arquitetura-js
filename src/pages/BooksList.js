@@ -17,6 +17,15 @@ const BooksList = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await api.search('The Linux Command Line');
+      return data;
+    };
+    const result = fetchData();
+    console.log(result);
+  }, [search]);
+
   return (
     <>
       <Navbar />
