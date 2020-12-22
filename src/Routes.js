@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import BooksList from './pages/BooksList';
 import Home from './pages/Home';
 import ListUsers from './pages/ListUsers';
 import Login from './pages/Login';
@@ -20,6 +21,9 @@ const Routes = () => {
         </Route>
         <Route path="/signup">
           <Signup />
+        </Route>
+        <Route path="/books">
+          <BooksList />
         </Route>
       </Switch>
     </div>

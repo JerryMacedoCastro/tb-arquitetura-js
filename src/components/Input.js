@@ -7,9 +7,11 @@ const Input = ({ label, id, type, value, setValue, ...props }) => {
 
   return (
     <>
-      <label htmlFor={id} className="form-label mt-3 text-muted">
-        {label}
-      </label>
+      {label && (
+        <label htmlFor={id} className="form-label mt-3 text-muted">
+          {label}
+        </label>
+      )}
       <input
         type={type}
         className="form-control"
